@@ -94,7 +94,7 @@ Displays all matching contacts and stores their indices.
 
 -> Save changes
 
-4️⃣** Delete Contact**
+4️⃣**Delete Contact**
 
 -> First perform a search
 
@@ -170,13 +170,13 @@ Code
 
 Code
 
-   gcc *.c -o addressbook
+    gcc *.c -o addressbook
   
 4️⃣ **Run the Program**
 
 Code
 
-  ./addressbook
+   ./addressbook
 
   ----------------------------------------------------------------------------------------------------------------------------------------
 🧾 Output
@@ -196,7 +196,7 @@ Address Book Menu:
 5. List all contacts
    
 6. Exit
-7. 
+ 
 Enter your choice:
 
 **📌 Add Contact**
@@ -224,6 +224,7 @@ Enter any number from the above: 1
 Enter the name you want to search: user1
 
   Contact found
+  
   ------------------------------------------------------------
   **Name          Number          Email**
   
@@ -232,6 +233,7 @@ Enter the name you want to search: user1
   ------------------------------------------------------------
   
   Contact found
+  
   ------------------------------------------------------------
   
  **Name           Number           Email**
@@ -264,7 +266,6 @@ Enter new name: user2
 
 **📌 List All Contacts**
 
-  ------------------------------------------------------------
   **No      Name          Number          Email**
   
   
@@ -275,8 +276,6 @@ Enter new name: user2
   3         user1         7654321890      user1@gmail.com
   
   4         user2         6543217890      user1@gmail.com
-  
-  ------------------------------------------------------------
   
 **📌 Delete Contact**
 
@@ -308,7 +307,7 @@ Deleted successfully
 -----------------------------------------------------------------------------------------------------------------------------------------
 🏁 Conclusion
 -----------------------------------------------------------------------------------------------------------------------------------------
-I overcame all challenges by breaking each problem into small steps, writing clear validation functions, testing each feature individually, and improving the logic until the entire Address Book worked smoothly and reliably.
+This project implemented a complete Address Book system in C that stores and manages contacts using structures and arrays, and demonstrated all core operations such as adding, searching, editing, deleting, and listing contacts through a simple menu‑driven interface. It also showcased proper input validation, duplicate handling, modular function design, and clean record management, proving how a real‑world contact manager can be built using fundamental C programming concepts.
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 🔮 Future Work
