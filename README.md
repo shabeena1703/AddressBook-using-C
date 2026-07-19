@@ -1,45 +1,290 @@
-DESCRIPTION:
+📘 Address Book Management System
+------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
+📝 Brief Summary
+------------------------------------------------------------------------------------------------------------------------------------------
+This project is a simple Address Book application written in C.
 
-The Address Book Management System is a C-based console application that allows users to store and manage contact information efficiently.
+It allows users to add, search, edit, delete, and list contacts.
+
 Each contact contains a Name, Phone Number, and Email ID.
-The program supports all essential CRUD operations — Create, Read, Update, Delete — along with strong input validation to ensure data 
-accuracy.
 
-FEATURES:
+The program validates all inputs and prevents duplicate phone numbers, ensuring clean and reliable data.
 
-Add new contact
+------------------------------------------------------------------------------------------------------------------------------------------
+📌 Overview
+------------------------------------------------------------------------------------------------------------------------------------------
 
-Search Contacts
+An Address Book is a basic contact management system.
 
-Edit existing contacts
+In this project:
 
-Delete contact
+-> Each contact is stored using a struct Contact
 
-List all contacts
+-> All contacts are managed inside struct AddressBook
 
-TECHNOLOGIES USED:
+-> The program supports full CRUD operations
 
-Structures
+-> Strong validation ensures correct data entry
 
-Arrays
+-> The user interacts through a simple command‑line menu
 
-String Handling(strcmp),(strcpy),(strlen)
+This project helped me understand:
 
-Character validation(is digit),(isaplha),(islower)
+-> How structures and arrays work in C
 
-CHALLENGES FACED:
+-> How to validate user input
 
-Validating phone numbers → Making sure the number is exactly 10 digits and starts with 6–9.
+-> How to design modular functions
 
-Avoiding duplicate phone numbers → Ensuring no two contacts have the same phone number.
+-> How CRUD operations work internally
 
-Validating email format → Checking that the email ends with @gmail.com and is properly formatted.
+-> How to manage records in memory
 
-Handling multiple search results → Allowing the user to choose when many contacts match the search.
+------------------------------------------------------------------------------------------------------------------------------------------
+🛠️ Tools and Technologies Used
+------------------------------------------------------------------------------------------------------------------------------------------
+**Programming Language:** C
 
-Deleting contacts cleanly → Shifting the list after deletion so no empty gaps remain.
+**Compiler:** GCC
 
-Keeping code modular → Splitting the program into clear functions for readability and maintenance.
+**Operating system:** Linux / Windows
 
-I overcame all these challenges by breaking each problem into small steps, writing clear validation functions, testing each feature 
-one by one, and improving the code until everything worked correctly.
+**Development Tools:** VS Code / Vim
+
+**Version Control:** Git & GitHub
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+🔧 Operations Performed 
+-----------------------------------------------------------------------------------------------------------------------------------------
+1️⃣** Add Contact**
+-> Enter name, phone number, and email
+
+-> Validate phone number (10 digits, starts with 6–9)
+
+-> Validate email (@gmail.com)
+
+-> Prevent duplicate phone numbers
+
+-> Save contact
+
+2️⃣ **Search Contact**
+
+Search by:
+
+-> Name
+
+-> Email ID
+
+ ->Phone Number
+
+Displays all matching contacts and stores their indices.
+
+3️⃣ **Edit Contact**
+
+-> First perform a search
+
+-> If multiple results → user selects one
+
+-> Edit name, phone number, or email
+
+-> Re‑validate updated details
+
+-> Save changes
+
+4️⃣ Delete Contact
+-----------------------------------------------------------------------------------------------------------------------------------------
+-> First perform a search
+
+-> User selects the contact
+
+-> Confirm deletion
+
+-> Remove contact and shift remaining contacts
+
+**5️⃣ List All Contacts**
+-> Display all saved contacts
+
+-> Show name, phone number, and email in a clean table
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+🧠 Methods
+-----------------------------------------------------------------------------------------------------------------------------------------
+**Phone Validation**
+-> Must be 10 digits
+
+-> Must start with 6–9
+
+-> Must contain only digits
+
+-> Must be unique
+
+**Email Validation**
+
+-> Must end with @gmail.com
+
+-> Cannot start with @ or .
+
+-> Must contain valid characters
+
+**Search Logic**
+
+->Loop through all contacts
+
+-> Compare name/email/phone
+
+-> Store matching indices
+
+-> Display results
+
+**Edit/Delete Logic**
+
+-> Use stored indices from search
+
+-> Allow user to choose correct contact
+
+-> Validate new data (for edit)
+
+-> Shift contacts (for delete)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+🚀 How to Run This Project
+-----------------------------------------------------------------------------------------------------------------------------------------
+1️⃣** Clone the Repository**
+
+Code
+  git clone https://github.com/yourusername/AddressBook-using-C.git
+2️⃣** Navigate to the Project Folder**
+
+Code
+
+  cd AddressBook-using-C
+3️⃣ **Compile the Program**
+
+Code
+  gcc *.c -o addressbook
+4️⃣ **Run the Program**
+
+Code
+  ./addressbook
+
+  ----------------------------------------------------------------------------------------------------------------------------------------
+🧾 Output
+-----------------------------------------------------------------------------------------------------------------------------------------
+**📌 Menu**
+
+Address Book Menu:
+1. Add/Create contact
+2. Search contact
+3. Edit contact
+4. Delete contact
+5. List all contacts
+6. Exit
+Enter your choice:
+
+**📌 Add Contact**
+
+Enter Name: Shabeena
+Enter Mobile number (10 digits): 9876543210
+Enter email: skshabeena33@gmail.com
+
+Contact added successfully!
+
+**📌 Search Contact**
+
+Enter your choice: 2
+1. Search by name
+2. Search by email ID
+3. Search by phone number
+Enter any number from the above: 1
+Enter the name you want to search: user1
+
+  Contact found
+  ------------------------------------------------------------
+  Name        Number        Email
+  user1       7654321890    user1@gmail.com
+  ------------------------------------------------------------
+  Contact found
+  ------------------------------------------------------------
+  Name        Number        Email
+  user1       6543217890    user1@gmail.com
+  ------------------------------------------------------------
+  
+**📌 Edit Contact**
+
+Enter your choice: 3
+Enter the name you want to search: user1
+Enter a choice from 1 to 2: 2
+What do you want to edit?
+1. Name
+2. Mobile number
+3. Email
+Enter a number from above options: 1
+Enter new name: user2
+
+  Contact updated successfully!
+
+**📌 List All Contacts**
+
+  ------------------------------------------------------------
+  No    Name        Number        Email
+  ------------------------------------------------------------
+  1    Shabeena    9876543210    skshabeena32@gmail.com
+  2    karima      8765432190    karima@gmail.com
+  3    user1       7654321890    user1@gmail.com
+  4    user2       6543217890    user1@gmail.com
+  ------------------------------------------------------------
+  
+**📌 Delete Contact**
+
+Enter your choice: 4
+Enter the email Id you want to search: user1@gmail.com
+Enter a choice from 1 to 2: 2
+
+Do you want to delete the contact details(Y/N): Y
+Deleted successfully
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+🚧 Challenges Faced 
+-----------------------------------------------------------------------------------------------------------------------------------------
+-> Validating phone numbers correctly
+
+-> Avoiding duplicate phone numbers
+
+-> Validating email format
+
+-> Handling multiple search results
+
+-> Deleting contacts without leaving gaps
+
+-> Keeping code modular and readable
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+🏁 Conclusion
+-----------------------------------------------------------------------------------------------------------------------------------------
+I overcame all challenges by breaking each problem into small steps, writing clear validation functions, testing each feature individually, and improving the logic until the entire Address Book worked smoothly and reliably.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+🔮 Future Work
+-----------------------------------------------------------------------------------------------------------------------------------------
+-> Add file storage (save contacts permanently)
+
+-> Add sorting (A–Z, Z–A)
+
+-> Add multiple email domain support
+
+-> Add GUI version
+
+-> Add categories (family, work, friends)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+👤 Author & Contact
+-----------------------------------------------------------------------------------------------------------------------------------------
+Shaik Shabeena  
+
+Electronics and Communication Engineering
+
+Email: skshabeena33@gmail.com
+
+Linkedin: https://www.linkedin.com/in/shaik-shabeena-36a7b9332/
