@@ -173,22 +173,23 @@ Start
  
 Show Menu
 
- ↓
+   ↓
  
 User selects an option
 
- ↓
+   ↓
  
 Add / Search / Edit / Delete / List
 
- ↓
+   ↓
+ 
 Perform the selected operation
 
- ↓
+   ↓
  
 Return to Menu
 
- ↓
+   ↓
  
 Exit
 
