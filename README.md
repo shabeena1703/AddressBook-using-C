@@ -154,29 +154,29 @@ Displays all matching contacts and stores their indices.
 -----------------------------------------------------------------------------------------------------------------------------------------
 🚀 How to Run This Project
 -----------------------------------------------------------------------------------------------------------------------------------------
-1️⃣** Clone the Repository**
+1️⃣**Clone the Repository**
 
 Code
 
     git clone https://github.com/yourusername/AddressBook-using-C.git
   
-2️⃣** Navigate to the Project Folder**
+2️⃣**Navigate to the Project Folder**
 
 Code
 
-    cd AddressBook-using-C
+     cd AddressBook-using-C
   
 3️⃣ **Compile the Program**
 
 Code
 
-    gcc *.c -o addressbook
+     gcc *.c -o addressbook
   
-4️⃣ **Run the Program**
+4️⃣**Run the Program**
 
 Code
 
-   ./addressbook
+    ./addressbook
 
   ----------------------------------------------------------------------------------------------------------------------------------------
 🧾 Output
@@ -225,22 +225,16 @@ Enter the name you want to search: user1
 
   Contact found
   
-  ------------------------------------------------------------
   **Name          Number          Email**
   
   user1           7654321890      user1@gmail.com
   
-  ------------------------------------------------------------
-  
   Contact found
-  
-  ------------------------------------------------------------
   
  **Name           Number           Email**
   
   user1           6543217890        user1@gmail.com
   
-  ------------------------------------------------------------
   
 **📌 Edit Contact**
 
