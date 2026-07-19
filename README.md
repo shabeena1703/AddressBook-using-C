@@ -94,8 +94,8 @@ Displays all matching contacts and stores their indices.
 
 -> Save changes
 
-4️⃣ Delete Contact
------------------------------------------------------------------------------------------------------------------------------------------
+4️⃣** Delete Contact**
+
 -> First perform a search
 
 -> User selects the contact
@@ -158,22 +158,24 @@ Displays all matching contacts and stores their indices.
 
 Code
 
-  git clone https://github.com/yourusername/AddressBook-using-C.git
+    git clone https://github.com/yourusername/AddressBook-using-C.git
   
 2️⃣** Navigate to the Project Folder**
 
 Code
 
-  cd AddressBook-using-C
+    cd AddressBook-using-C
+  
 3️⃣ **Compile the Program**
 
 Code
 
-  gcc *.c -o addressbook
+   gcc *.c -o addressbook
   
 4️⃣ **Run the Program**
 
 Code
+
   ./addressbook
 
   ----------------------------------------------------------------------------------------------------------------------------------------
@@ -182,6 +184,7 @@ Code
 **📌 Menu**
 
 Address Book Menu:
+
 1. Add/Create contact
     
 2. Search contact
@@ -222,18 +225,18 @@ Enter the name you want to search: user1
 
   Contact found
   ------------------------------------------------------------
-  Name        Number        Email
+  **Name          Number          Email**
   
-  user1       7654321890    user1@gmail.com
+  user1           7654321890      user1@gmail.com
   
   ------------------------------------------------------------
   
   Contact found
   ------------------------------------------------------------
   
-  Name        Number        Email
+ **Name           Number           Email**
   
-  user1       6543217890    user1@gmail.com
+  user1           6543217890        user1@gmail.com
   
   ------------------------------------------------------------
   
@@ -262,15 +265,16 @@ Enter new name: user2
 **📌 List All Contacts**
 
   ------------------------------------------------------------
-  No    Name        Number        Email
-  ------------------------------------------------------------
-  1    Shabeena    9876543210    skshabeena32@gmail.com
+  **No      Name          Number          Email**
   
-  2    karima      8765432190    karima@gmail.com
   
-  3    user1       7654321890    user1@gmail.com
+  1         Shabeena      9876543210      skshabeena32@gmail.com
   
-  4    user2       6543217890    user1@gmail.com
+  2         karima        8765432190      karima@gmail.com
+  
+  3         user1         7654321890      user1@gmail.com
+  
+  4         user2         6543217890      user1@gmail.com
   
   ------------------------------------------------------------
   
