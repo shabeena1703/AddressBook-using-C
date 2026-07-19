@@ -58,7 +58,8 @@ This project helped me understand:
 
 🔧 Operations Performed 
 -----------------------------------------------------------------------------------------------------------------------------------------
-1️⃣** Add Contact**
+1️⃣ **Add Contact**
+
 -> Enter name, phone number, and email
 
 -> Validate phone number (10 digits, starts with 6–9)
@@ -104,6 +105,7 @@ Displays all matching contacts and stores their indices.
 -> Remove contact and shift remaining contacts
 
 **5️⃣ List All Contacts**
+
 -> Display all saved contacts
 
 -> Show name, phone number, and email in a clean table
@@ -112,6 +114,7 @@ Displays all matching contacts and stores their indices.
 🧠 Methods
 -----------------------------------------------------------------------------------------------------------------------------------------
 **Phone Validation**
+
 -> Must be 10 digits
 
 -> Must start with 6–9
@@ -154,7 +157,9 @@ Displays all matching contacts and stores their indices.
 1️⃣** Clone the Repository**
 
 Code
+
   git clone https://github.com/yourusername/AddressBook-using-C.git
+  
 2️⃣** Navigate to the Project Folder**
 
 Code
@@ -163,7 +168,9 @@ Code
 3️⃣ **Compile the Program**
 
 Code
+
   gcc *.c -o addressbook
+  
 4️⃣ **Run the Program**
 
 Code
@@ -176,17 +183,25 @@ Code
 
 Address Book Menu:
 1. Add/Create contact
+    
 2. Search contact
+ 
 3. Edit contact
+ 
 4. Delete contact
+  
 5. List all contacts
+   
 6. Exit
+7. 
 Enter your choice:
 
 **📌 Add Contact**
 
 Enter Name: Shabeena
+
 Enter Mobile number (10 digits): 9876543210
+
 Enter email: skshabeena33@gmail.com
 
 Contact added successfully!
@@ -194,33 +209,52 @@ Contact added successfully!
 **📌 Search Contact**
 
 Enter your choice: 2
+
 1. Search by name
+   
 2. Search by email ID
+ 
 3. Search by phone number
+ 
 Enter any number from the above: 1
+
 Enter the name you want to search: user1
 
   Contact found
   ------------------------------------------------------------
   Name        Number        Email
+  
   user1       7654321890    user1@gmail.com
+  
   ------------------------------------------------------------
+  
   Contact found
   ------------------------------------------------------------
+  
   Name        Number        Email
+  
   user1       6543217890    user1@gmail.com
+  
   ------------------------------------------------------------
   
 **📌 Edit Contact**
 
 Enter your choice: 3
+
 Enter the name you want to search: user1
+
 Enter a choice from 1 to 2: 2
+
 What do you want to edit?
+
 1. Name
+ 
 2. Mobile number
+ 
 3. Email
+ 
 Enter a number from above options: 1
+
 Enter new name: user2
 
   Contact updated successfully!
@@ -231,18 +265,25 @@ Enter new name: user2
   No    Name        Number        Email
   ------------------------------------------------------------
   1    Shabeena    9876543210    skshabeena32@gmail.com
+  
   2    karima      8765432190    karima@gmail.com
+  
   3    user1       7654321890    user1@gmail.com
+  
   4    user2       6543217890    user1@gmail.com
+  
   ------------------------------------------------------------
   
 **📌 Delete Contact**
 
 Enter your choice: 4
+
 Enter the email Id you want to search: user1@gmail.com
+
 Enter a choice from 1 to 2: 2
 
 Do you want to delete the contact details(Y/N): Y
+
 Deleted successfully
 
 -----------------------------------------------------------------------------------------------------------------------------------------
